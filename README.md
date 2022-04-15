@@ -1,7 +1,7 @@
 # DSprites-extended
 An extension of the Deepmind dSprites Dataset
 
-This dataset extends the [dSprites](https://github.com/deepmind/dsprites-dataset) dataset of synthetic objects varying along set attributes. In this Python implementation, shapes are generated using [pillow](https://pillow.readthedocs.io/en/stable/index.html) and saved as a compressed [numpy](https://numpy.org/) .npz archive.
+This dataset extends the [dSprites](https://github.com/deepmind/dsprites-dataset) dataset of RGB images of synthetic objects varying along set attributes. In this Python implementation, shapes are generated using [pillow](https://pillow.readthedocs.io/en/stable/index.html) and saved as a compressed [numpy](https://numpy.org/) .npz archive.
 
 ## Differences with dSprite
 
