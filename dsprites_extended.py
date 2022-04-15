@@ -59,7 +59,10 @@ def create_dsprites_npz(image_size=(64, 64), base_len=24):
         "imgs": [],
         "latents_values": [],
         "latents_classes": [],
-        "metadata": []
+        "metadata": np.array([
+            {"attributes": transform_ranges},
+            {"author": "Amogh Inamdar"}
+        ], dtype=object)
     }
     for i, params in enumerate(itertools.product(*(transform_ranges.values()))):
         params = {k: params[i] for i, k in enumerate(transform_ranges.keys())}
@@ -73,12 +76,6 @@ def create_dsprites_npz(image_size=(64, 64), base_len=24):
 
 def load_dsprites_npz(savefile):
     data = np.load(savefile, allow_pickle=True)
-    '''
-    print([(k, data[k].shape) for k in data.keys()])
-    img = Image.fromarray(data["imgs"][0], mode="RGB")
-    img.show()
-    print(data["latents_values"][0], data["latents_classes"][0])
-    '''
     return data
 
 
