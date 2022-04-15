@@ -5,7 +5,7 @@ This dataset extends the [dSprites](https://github.com/deepmind/dsprites-dataset
 
 ## Differences with dSprite
 
-- This code produces RGB (3-channel) images, varying along the same attributes as dSprites. 
+- This code produces RGB (3-channel) images (as opposed to binary), varying along the same attributes as dSprites. 
 - Latents values are stored as object arrays with their true values (not float64 encoded arrays).
 - Metadata is currently absent.
 - Indexing will differ slightly, but images are still in order of the latents (top to bottom as described below).
