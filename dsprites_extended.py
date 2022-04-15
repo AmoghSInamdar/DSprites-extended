@@ -83,4 +83,6 @@ def load_dsprites_npz(savefile):
 
 
 if __name__ == "__main__":
-    create_dsprites_npz()
+    # generate_images("images")
+    # create_dsprites_npz()
+    load_dsprites_npz("dsprites_ndarray_co4sh3sc6ro20xp16yp16_im64x64_bb24.npz")
