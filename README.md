@@ -21,4 +21,4 @@ This dataset extends the [dSprites](https://github.com/deepmind/dsprites-dataset
 
 ## Note to users
 
-Since pillow applies most transforms while the shapes are being rendered, this code does not provide a convenient interface for extensions. To extend the dataset to include more attributes, users will likely need to modify the code for the generation of each shape.
+Since pillow applies most transforms while the shapes are being rendered, this code does not provide a convenient interface for extensions. To extend the dataset to include more attributes, you will likely need to modify the code for the generation of each shape.
